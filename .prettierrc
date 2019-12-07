@@ -4,5 +4,6 @@
   "singleQuote": true,
   "printWidth": 110,
   "trailingComma": "es5",
-  "bracketSpacing": true
+  "bracketSpacing": true,
+  "proseWrap": "preserve"
 }
