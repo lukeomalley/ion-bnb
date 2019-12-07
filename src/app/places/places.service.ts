@@ -41,9 +41,34 @@ export class PlacesService {
       'https://media-cdn.tripadvisor.com/media/photo-w/0d/5a/f9/fd/hotel-mont-blanc.jpg',
       225
     ),
+    new Place(
+      '6',
+      'Mont Tremblant Hotel',
+      'A 3-minute walk from ski lifts, this upscale hotel in the Laurentian Mountains',
+      'https://cache.marriott.com/marriottassets/marriott/YMYWI/ymywi-exterior-7757-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*',
+      205
+    ),
+    new Place(
+      '7',
+      'Hotel Pra Tlusel',
+      'A 3-minute walk from ski lifts, this upscale hotel in the Laurentian Mountains',
+      'http://www.valgardena-web.com/hotel_val_gardena/fotos/info@pratlusel.com/big/_AG61624klein_big.jpg',
+      325
+    ),
+    new Place(
+      '8',
+      'Fairmont Chateau Lake Louise',
+      'Posh lakefront hotel with multiple dining options & outdoor activities, plus an indoor pool & a spa.',
+      'https://images.trvl-media.com/hotels/1000000/30000/22600/22503/a4e0d0a3_z.jpg',
+      400
+    ),
   ];
 
   getPlaces() {
     return [...this.places];
+  }
+
+  getPlace(id: string) {
+    return this.places.find(place => place.id === id);
   }
 }
